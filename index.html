@@ -3,11 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Productos</title>
+
+    <title>Navbar + </title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
         }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+
 
         .grid {
             display: grid;
@@ -46,6 +72,20 @@
 </head>
 
 <body>
+
+    <nav>
+        <div class="logo">
+            <img src="C:\Users\Alumno2425\repositorios\tienda-online\logo.JPG" alt="Logo Empresa">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </nav>
+
     <h1>Productos</h1>
     <div class="grid">
         <div class="product">
@@ -91,6 +131,7 @@
             <p class="stock">Stock: 10 unidades</p>
         </div>
     </div>
+
 </body>
 
 </html>
